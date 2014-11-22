@@ -16,8 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## After the cacheSolve program is run once, the results will be stored in teh CacheMatrix (created above). This will allow the inverse to be called multiple times without requiring R to reprocess the solve function.
 
-cacheSolve <- function(x, ...) {
-}
+
 cacheSolve <- function(x) {
         m <- solve(x)
         if(!is.null(m)) {
